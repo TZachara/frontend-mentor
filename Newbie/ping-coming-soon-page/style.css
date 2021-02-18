@@ -1,0 +1,197 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: hsl(223, 87%, 63%);
+    --secondary-blue: hsl(223, 100%, 88%);
+    --validation-red: hsl(354, 100%, 66%);
+    --grey: hsl(0, 0%, 59%);
+    --dark-blue: hsl(209, 33%, 12%);
+    --font-size: 16px;
+    --font: 'Libre Franklin';
+}
+
+html {
+    font-family: var(--font), sans-serif;
+    font-size: var(--font-size);
+}
+
+header img {
+    width: 3rem;
+    display: block;
+    margin: 5em auto 0 auto;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta__title {
+    font-size: 1.3rem;
+    margin-top: 1.75rem;
+    font-weight: 600;
+}
+
+.text-muted {
+    font-weight: 300;
+    color: var(--grey);
+}
+
+.cta__text {
+    font-size: 0.7rem;
+    margin-top: 1.75rem;
+    color: var(--dark-blue);
+}
+
+.cta__form {
+    width: 75%;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cta__form input {
+    flex: 1 1 0;
+    min-width: 20rem;
+    border: 1px solid var(--secondary-blue);
+    border-radius: 2rem;
+    padding: 0.9em 2em;
+}
+
+.cta__form input::placeholder {
+    color: var(--secondary-blue);
+    opacity: 0.7;
+    font-weight: 100;
+}
+
+.cta__form button {
+    flex: 1 1 0;
+    min-width: 20rem;
+    margin-top: 0.75em;
+    color: white;
+    border: none;
+    background-color: var(--primary);
+    padding: 0.9em 2em;
+    border-radius: 2rem;
+    position: relative;
+    box-shadow: 0 5px 15px 1px hsla(223, 87%, 63%, 0.3);
+}
+
+.showcase {
+    margin-top: 4em;
+}
+
+.showcase img {
+    display: block;
+    width: 80%;
+    max-width: 40rem;
+    margin: auto;
+}
+
+.footer {
+    margin-top: 10rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    border: 1px solid var(--secondary-blue);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    color: var(--primary);
+}
+
+.copyright {
+    margin: 2rem;
+    text-align: center;
+    color: var(--grey);
+    font-size: 0.7rem;
+}
+
+@media (min-width: 1000px) {
+    header img {
+        width: 6rem;
+    }
+    .cta__title {
+        font-size: 3rem;
+    }
+    .cta__text {
+        font-size: 1.2rem;
+    }
+    .cta__form {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        width: 50%;
+        font-size: 1.2rem;
+    }
+    .cta__form input {
+        flex: 3 1 0px;
+        font-size: inherit;
+    }
+    .cta__form button {
+        flex: 1 1 0px;
+        margin-top: 0;
+        font-size: inherit;
+        min-width: 15rem;
+    }
+}
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Blue: hsl(223, 87%, 63%)
+
+### Secondary
+
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 20px
+
+### Fonts
+
+- Family: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
+- Weights: 300, 600, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */

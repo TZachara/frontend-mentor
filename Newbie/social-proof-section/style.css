@@ -1,0 +1,195 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Greyish-Magenta: hsl(303, 10%, 53%);
+    --Light-Greyish-Magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --mobile-resolution: 1000px;
+}
+
+.attribution {
+    margin: 0 auto;
+    align-self: flex-end;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Resets */
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: clamp(15px, 1vw, 45px);
+    font-family: 'Spartan', Roboto, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    background: url('./images/bg-pattern-top-desktop.svg') no-repeat top 0 left 0,
+        url('./images/bg-pattern-bottom-desktop.svg') no-repeat bottom 0 right 0;
+    background-size: max(400px, 50%), auto;
+    height: 100vh;
+    margin: 5em 10em 0 10em;
+}
+
+.hero {
+    flex: 1 1 calc(var(--mobile-resolution) / 2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero_content {
+    max-width: 30em;
+}
+
+.hero_title {
+    width: 12ch;
+    font-size: 300%;
+    color: var(--Very-Dark-Magenta);
+}
+
+.hero_text {
+    margin-top: 1em;
+    color: var(--Dark-Greyish-Magenta);
+    line-height: 1.5;
+}
+
+.ratings {
+    flex: 1 1 calc(var(--mobile-resolution) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 1.5em;
+    font-size: 90%;
+}
+
+.rating {
+    background: var(--Light-Greyish-Magenta);
+    padding: 1em 2em;
+    height: 4em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 32em;
+}
+
+.rating_stars {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.rating_stars > img {
+    float: left;
+    width: 1.125em;
+    flex: 1;
+}
+
+.rating_text {
+    flex: 1 1 auto;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+}
+
+.rating:nth-child(1) {
+    margin-right: 8em;
+}
+
+.rating:nth-child(2) {
+    margin-right: 4em;
+}
+
+.testimonials {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5em;
+}
+
+.testimonial {
+    /* flex: 1; */
+    width: 23.5em;
+    background: var(--Very-Dark-Magenta);
+    color: var(--Light-Greyish-Magenta);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2em;
+    line-height: 1.5;
+}
+
+.testimonial_header {
+    margin-bottom: 2em;
+    font-size: 80%;
+}
+
+.testimonial_header > img {
+    float: left;
+    margin-right: 2em;
+    width: 3em;
+}
+
+.testimonial_name {
+    font-weight: 700;
+}
+
+.testimonial_buyer {
+    color: var(--Soft-Pink);
+    font-weight: 400;
+}
+
+.testimonial_text {
+    font-size: 80%;
+}
+
+.testimonial:nth-child(2) {
+    margin-top: 4em;
+}
+.testimonial:nth-child(3) {
+    margin-top: 8em;
+}
+
+.img_round {
+    border-radius: 50%;
+}
+
+@media (max-width: var(--mobile-resolution)) {
+    .hero {
+        height: 30vh;
+    }
+
+    .rating {
+        height: 30vh;
+    }
+}
+
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700 */

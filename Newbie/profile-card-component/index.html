@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    /* Resets */
+    *,
+    *:before,
+    *:after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* Root */
+    :root {
+      --dark-cyan: hsl(185, 75%, 39%);
+      --dark_desat-blue: hsl(229, 23%, 23%);
+      --dark-greyish-blue: hsl(227, 10%, 46%);
+      --dark-grey: hsl(0, 0%, 59%);
+    }
+
+    body{
+      height: 100vh;
+      font-size: 18px;
+      font-family: 'Kumbh Sans', sans-serif;
+      line-height: 1.4;
+      background: url('./images/bg-pattern-top.svg') no-repeat right 50vw bottom 50vh, url('./images/bg-pattern-bottom.svg') no-repeat 45vw 55vh, var(--dark-cyan);
+      /* background-size: 100vw; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .card{
+      margin: auto;
+      min-width: 350px;
+      min-height: 375px;
+      background-color: white;
+      overflow: hidden;
+      border-radius: 1rem;
+      box-shadow: 0 15px 15px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      font-weight: 700;
+      color: var(--dark_desat-blue);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-header{
+      background: url('./images/bg-pattern-card.svg') no-repeat;
+      min-height: 140px;
+      position: relative;
+    }
+
+    .card-body {
+      margin: 4.5rem 0 1rem 0 ;
+    }
+
+    .card-footer{
+      flex:1;
+      border-top: 1px solid var(--dark-grey);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:1rem;
+    }
+
+    .social{
+      flex:1
+    }
+
+    img{
+      border-radius: 50%;
+      position: absolute;
+      bottom:0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      border: 5px solid white;
+    }
+
+    span {
+      color: var(--dark-grey);
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+
+    p > span {
+      font-size: inherit;
+    }
+
+  </style> -->
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <img src="./images/image-victor.jpg" alt="" srcset="">
+    </div>
+    <div class="card-body">
+        <p>Victor Crest<span> 26</span></p>
+        <span>London</span></div>
+    <div class="card-footer">
+      <div class="social">
+        <p>80K</p>
+        <span>Followers</span>
+      </div>
+      <div class="social">
+        <p>803K</p>
+        <span>Likes</span>
+      </div>
+      <div class="social">
+        <p>1.4K</p>
+        <span>Photos</span>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
